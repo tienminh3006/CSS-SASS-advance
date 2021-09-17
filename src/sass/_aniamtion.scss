@@ -1,0 +1,40 @@
+@keyframes animaForMain {
+  0% {
+    opacity: 0;
+    transform: translate(100px, 0);
+  }
+}
+@keyframes animaForSub {
+  0% {
+    opacity: 0;
+    transform: translate(-100px, 0);
+  }
+}
+@keyframes animaForBtn {
+  0% {
+    opacity: 0;
+    transform: translate(0, 100px);
+  }
+}
+@keyframes animaForLogo {
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    transform: rotate(360deg);
+  }
+}
+@keyframes animationForPopup {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

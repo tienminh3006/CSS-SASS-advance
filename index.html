@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/81beaf8793.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./src/css/all.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
+
+    <title>Lập trình CSS và SASS nâng cao</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="" class="navigation__link">ENROLL FORM</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">OUR SKILLS</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">OUR COURSES</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">TESTIMONIALS</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">ABOUT US</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="navigation-mobile">
+        <input
+          hidden
+          type="checkbox"
+          name="checkbox"
+          id="checkbox"
+          class="checkbox"
+        />
+        <label class="navigation-mobile__menu-icon" for="checkbox"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <label for="checkbox-btn" class="nav__overlay"></label>
+        <div class="navigation-mobile__nav">
+          <label class="btn-close" for="checkbox"
+            ><i class="fas fa-times"></i
+          ></label>
+          <ul class="navigation-mobile__list">
+            <li class="navigation-mobile__item">
+              <a href="#section-1" class="navigation-mobile__link">ABOUT US</a>
+            </li>
+            <li class="navigation-mobile__item">
+              <a href="#section-2" class="navigation-mobile__link"
+                >OUR SKILLS</a
+              >
+            </li>
+            <li class="navigation-mobile__item">
+              <a href="#section-3" class="navigation-mobile__link"
+                >OUR COURSES</a
+              >
+            </li>
+            <li class="navigation-mobile__item">
+              <a href="#section-4" class="navigation-mobile__link"
+                >TESTIMONIALS</a
+              >
+            </li>
+            <li class="navigation-mobile__item">
+              <a href="#section-5" class="navigation-mobile__link"
+                >ENROLL FORM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="logo-box">
+        <img src="./src/img/logo.png" alt="logo" class="logo" />
+      </div>
+      <div class="text-box">
+        <h3 class="heading-primary">
+          <span class="heading-primary__main">Selftaught</span>
+          <span class="heading-primary__sub">is how you survive</span>
+        </h3>
+        <a href="#" class="btn btn-white btn-big">See our courses</a>
+      </div>
+    </header>
+    <div class="section-1" id="section-1">
+      <div class="section-1__heading">
+        <h2 class="">Story about us</h2>
+      </div>
+      <div class="grid wide">
+        <div class="row">
+          <div class="col l-6 t-6 m-12">
+            <h3 class="header-tertiary">From Zero to hero</h3>
+            <p>
+              We have created a fictional band website. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
+            </p>
+            <h3 class="header-tertiary">master your skills</h3>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <a class="btn__learn-more" href="#">Learn more &rarr;</a>
+          </div>
+          <div class="col l-6 t-6 m-12">
+            <div class="composition">
+              <img
+                class="composition__picture composition__picture__p1"
+                src="./src/img/photo1.png"
+                alt="galaxy"
+              />
+              <img
+                class="composition__picture composition__picture__p2"
+                src="./src/img/photo2.jpg"
+                alt="galaxy"
+              />
+              <img
+                class="composition__picture composition__picture__p3"
+                src="./src/img/photo3.jpg"
+                alt="galaxy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-2" id="section-2">
+      <div class="grid wide">
+        <div class="row">
+          <div class="col l-3 t-6 m-12">
+            <div class="section-2__content">
+              <i class="material-icons section-2__content-icon"
+                >hourglass_disabled</i
+              >
+              <h3 class="section-2__content-title">Up to 365 days/year</h3>
+              <p>
+                Never cook again! We really mean that. Our subscription plans
+                include up to 365 days/year coverage. You can also choose to
+                order more flexibly if that's your style.
+              </p>
+            </div>
+          </div>
+          <div class="col l-3 t-6 m-12">
+            <div class="section-2__content">
+              <i class="material-icons section-2__content-icon">alarm_on</i>
+              <h3 class="section-2__content-title">Ready in 20 minutes</h3>
+              <p>
+                You're only twenty minutes away from your delicious and super
+                healthy meals delivered right to your home. We work with the
+                best chefs in each town to ensure that you're 100% happy.
+              </p>
+            </div>
+          </div>
+          <div class="col l-3 t-6 m-12">
+            <div class="section-2__content">
+              <i class="material-icons section-2__content-icon">spa</i>
+              <h3 class="section-2__content-title">100% organic</h3>
+              <p>
+                All our vegetables are fresh, organic and local. Animals are
+                raised without added hormones or antibiotics. Good for your
+                health, the environment, and it also tastes better!
+              </p>
+            </div>
+          </div>
+          <div class="col l-3 t-6 m-12">
+            <div class="section-2__content">
+              <i class="material-icons section-2__content-icon"
+                >shopping_cart</i
+              >
+              <h3 class="section-2__content-title">Order anything</h3>
+              <p>
+                We don't limit your creativity, which means you can order
+                whatever you feel like. You can also choose from our menu
+                containing over 100 delicious meals. It's up to you!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-3" id="section-3">
+      <div class="section-3__header">
+        <h2>our courses</h2>
+      </div>
+      <div class="grid wide">
+        <div class="row">
+          <div class="col l-4 t-6 m-12">
+            <div class="section-3__content">
+              <div class="section-3__content-card section-3__content-front">
+                <div
+                  class="
+                    section-3__content__picture section-3__content__picture-1
+                  "
+                >
+                  &nbsp;
+                </div>
+                <h4 class="section-3__content__title">
+                  <span
+                    class="section-3__content__span section-3__content__span1"
+                    >Control <br />
+                    your time</span
+                  >
+                </h4>
+                <ul class="section-3__content__detail">
+                  <li>3 hours</li>
+                  <li>1000 students</li>
+                  <li>5 star rated</li>
+                </ul>
+              </div>
+              <div class="section-3__content-card section-3__content-behind">
+                <div class="section-3__content-behind-1">
+                  <div class="section-3__content-behind__only">ONLY</div>
+                  <div class="section-3__content-behind__price">$16</div>
+                  <a href="#popup" class="btn btn-white btn-big">ENROLL NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col l-4 t-6 m-12">
+            <div class="section-3__content">
+              <div class="section-3__content-card section-3__content-front">
+                <div
+                  class="
+                    section-3__content__picture section-3__content__picture-2
+                  "
+                >
+                  &nbsp;
+                </div>
+                <h4 class="section-3__content__title">
+                  <span
+                    class="section-3__content__span section-3__content__span2"
+                    >Make <br />
+                    mindmap</span
+                  >
+                </h4>
+                <ul class="section-3__content__detail">
+                  <li>10 hours</li>
+                  <li>3000 students</li>
+                  <li>5 star rated</li>
+                </ul>
+              </div>
+              <div class="section-3__content-card section-3__content-behind">
+                <div class="section-3__content-behind-2">
+                  <div class="section-3__content-behind__only">ONLY</div>
+                  <div class="section-3__content-behind__price">$22</div>
+                  <a href="#popup" class="btn btn-white btn-big">ENROLL NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col l-4 t-6 m-12">
+            <div class="section-3__content">
+              <div class="section-3__content-card section-3__content-front">
+                <div
+                  class="
+                    section-3__content__picture section-3__content__picture-3
+                  "
+                >
+                  &nbsp;
+                </div>
+                <h4 class="section-3__content__title">
+                  <span
+                    class="section-3__content__span section-3__content__span3"
+                    >make <br />
+                    your target</span
+                  >
+                </h4>
+                <ul class="section-3__content__detail">
+                  <li>15 hours</li>
+                  <li>5000 students</li>
+                  <li>5 star rated</li>
+                </ul>
+              </div>
+              <div class="section-3__content-card section-3__content-behind">
+                <div class="section-3__content-behind-3">
+                  <div class="section-3__content-behind__only">ONLY</div>
+                  <div class="section-3__content-behind__price">$29</div>
+                  <a href="#popup" class="btn btn-white btn-big">ENROLL NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn btn-primary btn-big">see all our courses</a>
+    </div>
+    <div class="section-4" id="section-4">
+      <div class="bg-video">
+        <video
+          class="bg-video__content"
+          src="./src/img/bg-video.mp4"
+          autoplay
+          loop
+          muted
+        >
+          Trình duyệt của bạn có thể không được hỗ trợ hoặc vui lòng kiểm tra
+          lại kết nối mạng
+        </video>
+      </div>
+      <div class="section-4__heading">
+        <h2>TESTIMONIALS</h2>
+      </div>
+      <div class="section-4-content">
+        <figure class="section-4-content-avatar">
+          <img src="./src/img/avatar-1.jpg" alt="avatar" />
+          <figcaption class="section-4-content-avatar-caption">
+            Oh Sehun
+          </figcaption>
+        </figure>
+        <div class="section-4-content__info">
+          <h3 class="header-tertiary">THANK FOR YOU GUIDE</h3>
+          <p>
+            Inexpensive, healthy and great-tasting meals, delivered right to my
+            home. We have lots of food delivery here in Lisbon, but no one comes
+            even close to Omifood. Me and my family are so in love!
+          </p>
+        </div>
+      </div>
+      <div class="section-4-content">
+        <figure class="section-4-content-avatar">
+          <img src="./src/img/avatar-2.png" alt="avatar" />
+          <figcaption class="section-4-content-avatar-caption">
+            Ji Chang Wook
+          </figcaption>
+        </figure>
+        <div class="section-4-content__info">
+          <h3 class="header-tertiary">VERY HELFUL COURSE</h3>
+          <p>
+            I was looking for a quick and easy food delivery service in San
+            Franciso. I tried a lot of them and ended up with Omnifood. Best
+            food delivery service in the Bay Area. Keep up the great work!
+            Omnifood is just awesome! I just launched a startup which leaves me
+            with no time for cooking, so Omnifood is a life-saver. Now that I
+            got used to it, I couldn't live without my daily meals!
+          </p>
+        </div>
+      </div>
+      <a class="btn__learn-more" href="#">read all the testimonials &rarr;</a>
+    </div>
+    <div class="section-5" id="section-5">
+      <div class="section-5__content">
+        <form class="section-5__content__form" action="">
+          <div class="form__header">ENROLL NOW</div>
+          <input type="text" class="form__input" placeholder="Full name" />
+          <input type="text" class="form__input" placeholder="Email" />
+          <div class="form__input__radio">
+            <div class="form__input__radio-value">
+              <input type="radio" value="Male" id="radio" name="raido" />
+              <label class="form__input__label" for="radio">Male</label>
+            </div>
+            <div class="form__input__radio-value">
+              <input type="radio" value="Male" id="radio" name="raido" />
+              <label class="form__input__label" for="radio">Female</label>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-small" type="submit">
+            SUBMIT &rarr;
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__heading">
+        <img src="./src/img/logo.png" alt="logo" />
+        <h2 class="footer__heading__title">SELFTAUGHT</h2>
+      </div>
+      <div class="grid wide">
+        <div class="row">
+          <div class="col l-6 t-12 m-12">
+            <ul class="footer__links__list">
+              <a href="#"><li class="footer__links__item">ADDRESS</li></a>
+              <a href="#"><li class="footer__links__item">CONTACTS</li></a>
+              <a href="#"><li class="footer__links__item">POLICY</li></a>
+              <a href="#"><li class="footer__links__item">SPONSORS</li></a>
+            </ul>
+          </div>
+          <div class="col l-6 t-12 m-12">
+            <div class="footer__copyright">
+              The electronic Copyright System (eCO) is back online, and
+              applications and services are working normally. The Register of
+              Copyrights updated a declaration of a disruption that indicates an
+              outage existed from 5 p.m. August 12, 2021, until 6 a.m. eastern
+              time on August 29, 2021. The Declaration Page includes
+              instructions for affected applicants to request an adjustment of
+              their effective date of registration.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__content__left">
+          <img src="./src/img/popup-pic.jpg" alt="computer science" />
+          <img src="./src/img/popup-pic-2.jpg" alt="computer science" />
+        </div>
+        <div class="popup__content__right">
+          <a href="#section-3">
+            <button class="popup__content__close">X</button></a
+          >
+          <h2 class="popup__heading">ENROLL NOW</h2>
+          <h3 class="header-tertiary">
+            Live Server › Settings: Chrome Debugging Attachment
+          </h3>
+          <p>
+            Enable Chrome Debugging Attachment to Live Server at Debuging Port
+            9222. NOTE: You have to install 'Debugger for Chrome' If the value
+            is true, Select 'Attach to Chrome' from Debug Window to start
+            debugging. CAUTION: If it is true, 'Launch Chrome against localhost'
+            may not work.
+          </p>
+          <a href="#" class="btn btn-primary btn-small">enroll now</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

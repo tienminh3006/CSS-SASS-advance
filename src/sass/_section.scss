@@ -1,0 +1,413 @@
+.section-1 {
+  background-color: $backgroundColor;
+  padding: 5rem 0 20rem;
+  margin: -5rem 0;
+  text-align: center;
+  &__heading {
+    @include setTitle;
+    margin: 8vh 0;
+  }
+}
+.header-tertiary {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.btn__learn-more {
+  text-decoration: none;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  display: inline-block;
+  //   align-items: center;
+  color: $color-bgr-gradient-dark;
+
+  position: relative;
+  &-icon {
+    font-size: 1rem;
+    margin-left: 0.2rem;
+  }
+  &:visited,
+  &:link {
+    border-bottom: 1px solid $color-bgr-gradient-dark;
+  }
+  &:hover {
+    background-color: $color-bgr-gradient-dark;
+    box-shadow: 0 5px 10px $color-bgr-gradient-light;
+    color: #fff;
+    // border-bottom: none;
+  }
+  &:active {
+    transform: translateY(1px);
+  }
+}
+.composition {
+  position: relative;
+  &__picture {
+    position: absolute;
+    width: 50%;
+    transition: all 0.2s;
+    &__p1 {
+      left: 0;
+    }
+    &__p2 {
+      right: 2rem;
+      top: 3rem;
+      z-index: 1;
+    }
+    &__p3 {
+      top: 10rem;
+      left: 3rem;
+      z-index: 2;
+    }
+    &:hover {
+      outline: 3px solid $color-bgr-gradient-dark;
+      box-shadow: 0 0.5rem 1.5rem $color-bgr-gradient-dark;
+      transform: scale(1.05);
+      z-index: 3;
+      //   padding: 1rem;
+      outline-offset: 3px;
+    }
+  }
+}
+//Section-2
+.section-2 {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(172, 172, 248, 0.8),
+      rgba(28, 62, 255, 0.8)
+    ),
+    url("../img/background.png");
+  background-size: cover;
+  background-position: top;
+  //   position: relative;
+  display: flex;
+  align-items: center;
+  height: 65rem;
+  clip-path: ellipse(70% 50% at 50% 50%);
+  &__content {
+    margin: 1rem 0;
+    background-color: #fff;
+    padding: 2rem 2rem 4rem;
+    border-radius: 5rem;
+    height: 25rem;
+    font-size: 1.2rem;
+    box-shadow: 0 1rem 2rem $color-bgr-gradient-dark;
+    text-align: center;
+    &-icon {
+      font-size: 4.6rem;
+      background-image: linear-gradient(
+        to right,
+        $color-bgr-gradient-light,
+        $color-bgr-gradient-dark
+      );
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+    &-title {
+      margin-bottom: 1.5rem;
+    }
+    &:hover {
+      transition: all 0.2s;
+      transform: translateY(-3px) scale(1.02);
+    }
+  }
+}
+//Section 3
+.section-3 {
+  .row {
+    justify-content: space-around;
+  }
+  background-color: $backgroundColor;
+  padding: 10rem 0;
+  margin: -5rem 0;
+  text-align: center;
+  &__header {
+    @include setTitle;
+    margin-bottom: 5rem;
+  }
+  &__content {
+    margin: 1rem 0;
+    perspective: 100rem;
+    position: relative;
+    height: 45rem;
+    &__title {
+      text-transform: uppercase;
+      font-weight: 300;
+      position: absolute;
+      top: 16rem;
+      right: 2rem;
+      color: #fff;
+      text-align: right;
+    }
+    &__span {
+      padding: 0.4rem 0.9rem;
+      border-radius: 3rem;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    }
+    &__span1 {
+      background-image: linear-gradient(
+        to right,
+        rgba(245, 190, 112, 0.8),
+        rgba(245, 146, 33, 0.8)
+      );
+    }
+    &__span2 {
+      background-image: linear-gradient(
+        to right,
+        rgba(128, 126, 250, 0.8),
+        rgba(52, 38, 245, 0.8)
+      );
+    }
+    &__span3 {
+      background-image: linear-gradient(
+        to right,
+        rgba(117, 250, 168, 0.8),
+        rgba(29, 206, 103, 0.8)
+      );
+    }
+    &-card {
+      border-radius: 5rem;
+      width: 100%;
+      height: 100%;
+      font-size: 2rem;
+      color: $text-color;
+      transition: all 1s;
+      position: absolute;
+      backface-visibility: hidden;
+      overflow: hidden;
+    }
+    &-front {
+      background-color: #fff;
+    }
+    &:hover &-front {
+      transform: rotateY(-180deg);
+    }
+    &-behind {
+      transform: rotateY(180deg);
+      color: #fff;
+      &__only {
+        padding: 5rem 0 2rem;
+        font-weight: 700;
+      }
+      &__price {
+        margin-bottom: 5rem;
+        font-size: 5rem;
+        font-weight: 300;
+      }
+      &-1 {
+        background-image: linear-gradient(
+          to right,
+          rgba(250, 205, 141, 0.8),
+          rgba(248, 181, 87, 0.842)
+        );
+        height: 100%;
+      }
+      &-2 {
+        background-image: linear-gradient(
+          to right,
+          rgba(160, 158, 247, 0.8),
+          rgba(98, 87, 248, 0.836)
+        );
+        height: 100%;
+      }
+      &-3 {
+        background-image: linear-gradient(
+          to right,
+          rgba(136, 255, 176, 0.8),
+          rgba(56, 236, 131, 0.808)
+        );
+        height: 100%;
+      }
+    }
+    &:hover &-behind {
+      transform: rotateY(0);
+    }
+    &__detail {
+      list-style: none;
+
+      width: 60%;
+      margin: 3rem auto;
+      li:not(:last-child) {
+        border-bottom: 1px solid $text-color;
+        padding: 0.5rem;
+      }
+    }
+    &__picture {
+      clip-path: ellipse(100% 100% at 50% 0);
+      background-blend-mode: screen;
+    }
+    &__picture-1 {
+      background-image: linear-gradient(
+          to right,
+          rgba(253, 215, 161, 0.8),
+          rgba(248, 181, 87, 0.842)
+        ),
+        url("../img/pic1.jpg");
+      height: 26rem;
+      background-size: cover;
+    }
+    &__picture-2 {
+      background-image: linear-gradient(
+          to right,
+          rgba(156, 155, 248, 0.8),
+          rgba(98, 87, 248, 0.836)
+        ),
+        url("../img/pic2.jpg");
+      height: 26rem;
+      background-size: cover;
+    }
+    &__picture-3 {
+      background-image: linear-gradient(
+          to right,
+          rgba(156, 247, 207, 0.8),
+          rgba(87, 248, 154, 0.808)
+        ),
+        url("../img/pic3.jpg");
+      height: 26rem;
+      background-size: cover;
+    }
+  }
+}
+.section-3 .btn {
+  margin-top: 4rem;
+}
+
+.section-4 {
+  position: relative;
+  padding: 15rem 0 5rem;
+  .btn__learn-more {
+    margin-top: 4rem;
+    color: #fff;
+  }
+  &-content {
+    background-color: #fff;
+    display: flex;
+    text-align: left;
+    width: 55%;
+    margin: 2rem auto;
+    padding: 2rem;
+    align-items: center;
+    border-radius: 100px;
+    box-shadow: 0 1rem 1.5rem rgba(214, 214, 214, 0.7);
+    &__info {
+      margin-left: 1rem;
+    }
+  }
+
+  &-content-avatar {
+    position: relative;
+    shape-outside: circle();
+    img {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      transition: ease all 0.3s;
+    }
+    &:hover img {
+      filter: blur(5px) brightness(90%);
+    }
+    &-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.8rem;
+      color: #fff;
+      opacity: 0;
+      transition: ease opacity 0.8s;
+    }
+    &:hover &-caption {
+      opacity: 1;
+    }
+  }
+  text-align: center;
+  &__heading {
+    @include setTitle;
+    margin-bottom: 5rem;
+  }
+}
+.bg-video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  &__content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+//Section 5
+.section-5 {
+  height: 50rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(144, 142, 252, 0.8),
+    rgba(38, 25, 219, 0.836)
+  );
+  position: relative;
+  &__content {
+    background-image: radial-gradient(
+        150% 200% ellipse at -15%,
+        rgba(#fff, 0.8) 50%,
+        transparent 50%
+      ),
+      url("../img/background.png");
+    background-size: cover;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 75%;
+    border-radius: 5rem;
+    &__form {
+      margin: 5rem 4rem;
+    }
+  }
+}
+.form__header {
+  @include setTitle;
+}
+.form__input {
+  display: block;
+  margin: 2.5rem 0;
+  padding: 1rem;
+  width: 40%;
+  border: none;
+  border-radius: 5px;
+  &:focus {
+    outline: $color-bgr-gradient-light solid 2px;
+  }
+  &__radio {
+    margin-bottom: 2rem;
+    &-value {
+      display: inline-flex;
+      margin-right: 6rem;
+      line-height: 15px;
+      height: 15px;
+    }
+  }
+  &__btn {
+    background-color: $color-bgr-gradient-dark;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    color: #fff;
+    &:hover {
+      box-shadow: 0 1rem 2rem $color-bgr-gradient-light;
+      transform: translateY(-3px);
+      cursor: pointer;
+    }
+    &:active {
+      transform: translateY(-1px);
+    }
+  }
+}
+#radio {
+  margin-right: 1rem;
+}

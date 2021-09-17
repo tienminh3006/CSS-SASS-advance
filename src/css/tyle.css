@@ -1,0 +1,18 @@
+/* Error: Undefined variable.
+ *    ,
+ * 14 |   color: $text-color;
+ *    |          ^^^^^^^^^^^
+ *    '
+ *   src\sass\_base.scss 14:10  @import
+ *   src\sass\style.scss 1:9    root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 14 \2502    color: $text-color;\d\a    \2502           ^^^^^^^^^^^\a    \2575 \a   src\\sass\\_base.scss 14:10  @import\a   src\\sass\\style.scss 1:9    root stylesheet";
+}

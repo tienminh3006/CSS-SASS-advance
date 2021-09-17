@@ -1,0 +1,59 @@
+$text-color: #777777;
+$color-bgr-gradient-light: rgba(158, 158, 250, 0.8);
+$color-bgr-gradient-dark: rgba(55, 55, 255, 0.9);
+$backgroundColor: rgb(226, 226, 226);
+$primary-color: rgba(73, 73, 224, 0.9);
+// @mixin setContentS3 {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+
+//   height: 100%;
+//   transition: all 1s ease;
+// }
+@mixin setTitle {
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+
+  font-size: 1.8rem;
+  background-image: linear-gradient(
+    to right,
+    $color-bgr-gradient-light,
+    $color-bgr-gradient-dark
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.2s;
+  display: inline-block;
+  &:hover {
+    transform: skewY(5deg) scale(1.1);
+    text-shadow: 0 5px 10px rgba(61, 61, 61, 0.4);
+  }
+}
+@mixin setHoverEffect {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 3rem;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: #fff;
+    transform: translateX(-110%);
+    opacity: 0;
+    transition: all 0.5s;
+    border-radius: 100%;
+  }
+  &:hover::before {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
