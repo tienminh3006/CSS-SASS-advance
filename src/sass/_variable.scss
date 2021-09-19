@@ -43,17 +43,18 @@ $primary-color: rgba(73, 73, 224, 0.9);
     content: "";
     position: absolute;
     left: 0;
-    right: 0;
+    // right: 0;
+    width: 100%;
     bottom: -3px;
     height: 2px;
     background-color: #fff;
     transform: translateX(-110%);
     opacity: 0;
-    transition: all 0.5s;
+    transition: all 1s;
     border-radius: 100%;
   }
   &:hover::before {
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateX(150%);
   }
 }

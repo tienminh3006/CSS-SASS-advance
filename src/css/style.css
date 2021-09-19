@@ -894,9 +894,9 @@ header {
 .navigation__item {
   list-style: none;
   overflow: hidden;
+  margin-right: 2rem;
 }
 .navigation__link {
-  margin-right: 2rem;
   font-size: 2rem;
   position: relative;
   text-decoration: none;
@@ -907,18 +907,18 @@ header {
   content: "";
   position: absolute;
   left: 0;
-  right: 0;
+  width: 100%;
   bottom: -3px;
   height: 2px;
   background-color: #fff;
   transform: translateX(-110%);
   opacity: 0;
-  transition: all 0.5s;
+  transition: all 1s;
   border-radius: 100%;
 }
 .navigation__link:hover::before {
   opacity: 1;
-  transform: translateX(0%);
+  transform: translateX(150%);
 }
 
 .btn-close {
@@ -977,18 +977,18 @@ header {
   content: "";
   position: absolute;
   left: 0;
-  right: 0;
+  width: 100%;
   bottom: -3px;
   height: 2px;
   background-color: #fff;
   transform: translateX(-110%);
   opacity: 0;
-  transition: all 0.5s;
+  transition: all 1s;
   border-radius: 100%;
 }
 .navigation-mobile__link:hover::before {
   opacity: 1;
-  transform: translateX(0%);
+  transform: translateX(150%);
 }
 
 /* Fade-in animation */
@@ -1455,7 +1455,7 @@ header {
   padding: 1rem 2rem;
 }
 .footer__links__list {
-  padding: 1rem;
+  padding: 0 1rem 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1469,6 +1469,7 @@ header {
 }
 .footer__links__item {
   list-style: none;
+  padding: 0.5rem;
   margin: 0 2rem;
   color: #fff;
 }

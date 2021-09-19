@@ -57,9 +57,9 @@ header {
   &__item {
     list-style: none;
     overflow: hidden;
+    margin-right: 2rem;
   }
   &__link {
-    margin-right: 2rem;
     font-size: 2rem;
     @include setHoverEffect;
   }
